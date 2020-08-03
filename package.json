@@ -15,7 +15,8 @@
   ],
   "license": "ISC",
   "scripts": {
-    "build": "npm run clean && tsc",
+    "prebuild": "npm run clean",
+    "build": "tsc",
     "pretest": "npm run build",
     "test": "jest",
     "posttest": "npm run lint",
