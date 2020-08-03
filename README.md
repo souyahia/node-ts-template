@@ -1,7 +1,6 @@
-# nodejs-template
+# Overview
 
 This repository describes a custom NodeJs TypeScript project template, that can be used to start a new project with the proper configuration very quickly.
-
 
 # Project Structure
 The project structure is as follows :
