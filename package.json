@@ -19,19 +19,16 @@
     "build": "tsc",
     "pretest": "npm run build",
     "test": "jest",
-    "posttest": "npm run lint",
     "pretest:coverage": "npm run build",
     "test:coverage": "jest --coverage",
-    "posttest:coverage": "npm run lint",
-    "prepublish": "npm run build",
     "clean": "rimraf dist && mkdirp dist",
     "lint": "npm run eslint && npm run prettier",
     "lint:fix": "npm run eslint:fix && npm run prettier:fix",
-    "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src ./spec",
-    "eslint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src ./spec",
+    "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src ./test",
+    "eslint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src ./test",
     "prettier:base": "prettier --parser typescript --single-quote",
-    "prettier": "npm run prettier:base -- --list-different \"src/**/*.{ts,tsx}\" \"spec/**/*.{ts,tsx}\"",
-    "prettier:fix": "npm run prettier:base -- --write \"src/**/*.{ts,tsx}\" \"spec/**/*.{ts,tsx}\""
+    "prettier": "npm run prettier:base -- --list-different \"src/**/*.{ts,tsx}\" \"test/**/*.{ts,tsx}\"",
+    "prettier:fix": "npm run prettier:base -- --write \"src/**/*.{ts,tsx}\" \"test/**/*.{ts,tsx}\""
   },
   "devDependencies": {
     "@types/bunyan": "^1.8.6",
@@ -46,7 +43,10 @@
     "eslint-formatter-pretty": "^4.0.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "jest": "^26.2.2",
     "mkdirp": "^1.0.4",
     "prettier": "^2.0.5",
@@ -58,8 +58,8 @@
     "bunyan": "^1.8.14"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/souyahia/nodejs-template.git"
+    "type": "git",
+    "url": "https://github.com/souyahia/nodejs-template.git"
   },
   "private": false
 }

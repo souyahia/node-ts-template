@@ -12,12 +12,11 @@ The project structure is as follows :
 │   ├── index.js.map      Main source map file
 │   └── ...
 ├── node_modules/         [gitignored] Node modules
-├── spec/                 TypeScript tests files
 ├── src/                  TypeScript source files
-│   ├── logger/           Bunyan logger instanciation
-│   │   └── ...
 │   ├── index.ts          Main source file
+│   ├── logger.ts         Bunyan logger instanciation
 │   └── ...
+├── test/                 TypeScript tests files
 ├── .eslintcache          [gitignored] ESLint cache
 ├── .eslintignore         Files ignored by ESLint
 ├── .eslintrc.json        ESLint configuration file
@@ -42,9 +41,9 @@ This project uses [TypeScript](https://www.typescriptlang.org/) for source files
 ## Logger
 A [Bunyan](https://www.npmjs.com/package/bunyan) logger is included in this project. The logger configuration can be edited in `/src/logger/logger.ts`. Code snipplet to use the logger :
 ```TypeScript
-import logger from './logger';
+import { logger } from './logger';
 
-logger.info('Hello world!');
+logger.info('Hello World!');
 ```
 
 ## Lint
@@ -66,7 +65,7 @@ To automatically fix linting errors, run the following command :
 ## Test
 [Jest](https://jestjs.io/) is the testing framework used in this project. The framework is used with the [ts-jest](https://www.npmjs.com/package/ts-jest) to allow the writing and execution of tests in TypeScript without compilation.
 
-Jest will execute every test file located in the `/spec` directory and ending with `.spec.ts`. The coverage report is generated in the LCOV format, and located in the `/coverage` directory.
+Jest will execute every test file located in the `/test` directory and ending with `.test.ts`. The coverage report is generated in the LCOV format, and located in the `/coverage` directory.
 
 To run the tests, use the following command :
 > `npm run test`
