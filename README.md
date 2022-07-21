@@ -24,8 +24,6 @@ The project structure is as follows :
 ├── .gitignore            Files ignored by GIT
 ├── .npmignore            Files ignored by NPM (for publishing)
 ├── .npmrc                NPM configuration file
-├── .prettierignore       Files ignored by Prettier
-├── .prettierrc.json      Prettier configuration file
 ├── jest.config.js        Jest configuration file
 ├── package.json          Project package.json
 ├── package-lock.json     Package lock (can be removed to update dep versions)

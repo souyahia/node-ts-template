@@ -1,6 +1,6 @@
 {
   "name": "nodejs-ts-template",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Custom NodeJs TypeScript project template.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,54 +13,47 @@
     "template",
     "typescript"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "scripts": {
+    "clean": "rimraf dist && mkdirp dist",
     "prebuild": "npm run clean",
     "build": "tsc",
     "pretest": "npm run build",
     "test": "jest",
     "pretest:coverage": "npm run build",
     "test:coverage": "jest --coverage",
-    "clean": "rimraf dist && mkdirp dist",
-    "lint": "npm run eslint && npm run prettier",
-    "lint:fix": "npm run eslint:fix && npm run prettier:fix",
-    "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src ./test",
-    "eslint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src ./test",
-    "prettier:base": "prettier --parser typescript --single-quote",
-    "prettier": "npm run prettier:base -- --list-different \"src/**/*.{ts,tsx}\" \"test/**/*.{ts,tsx}\"",
-    "prettier:fix": "npm run prettier:base -- --write \"src/**/*.{ts,tsx}\" \"test/**/*.{ts,tsx}\""
-  },
-  "devDependencies": {
-    "@types/bunyan": "^1.8.6",
-    "@types/jest": "^26.0.8",
-    "@types/node": "^14.0.27",
-    "@typescript-eslint/eslint-plugin": "^3.7.1",
-    "@typescript-eslint/parser": "^3.7.1",
-    "eslint": "^7.6.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-config-airbnb-typescript": "^9.0.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-formatter-pretty": "^4.0.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jest": "^23.20.0",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.23.2",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "jest": "^26.2.2",
-    "mkdirp": "^1.0.4",
-    "node-notifier": ">=8.0.1",
-    "prettier": "^2.0.5",
-    "rimraf": "^3.0.2",
-    "ts-jest": "^26.1.4",
-    "typescript": "^3.9.7"
-  },
-  "dependencies": {
-    "bunyan": "^1.8.14"
+    "lint": "eslint --cache --ext .js,.ts --format=pretty ./src ./test",
+    "lint:fix": "eslint --fix --cache --ext .js,.ts --format=pretty ./src ./test"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/souyahia/nodejs-template.git"
   },
-  "private": false
+  "bugs": {
+    "url": "https://github.com/souyahia/nodejs-template/issues"
+  },
+  "homepage": "https://github.com/souyahia/nodejs-template#readme",
+  "private": false,
+  "dependencies": {
+    "bunyan": "^1.8.15",
+    "mkdirp": "^1.0.4",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/bunyan": "^1.8.8",
+    "@types/jest": "^28.1.6",
+    "@types/node": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "eslint": "^8.20.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-formatter-pretty": "^4.1.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.6.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "jest": "^28.1.3",
+    "ts-jest": "^28.0.7",
+    "typescript": "^4.7.4"
+  }
 }
