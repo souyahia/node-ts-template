@@ -17,19 +17,19 @@ The project structure is as follows :
 │   ├── logger.ts         Bunyan logger instanciation
 │   └── ...
 ├── test/                 TypeScript tests files
-├── .eslintcache          [gitignored] ESLint cache
+├── .dockerignore         Files ignored during the Docker build
 ├── .eslintignore         Files ignored by ESLint
 ├── .eslintrc.json        ESLint configuration file
-├── .gitattributes        Git EOL normalization and diff configuration patterns
 ├── .gitignore            Files ignored by GIT
 ├── .npmignore            Files ignored by NPM (for publishing)
-├── .npmrc                NPM configuration file
+├── docker-entrypoint.sh  Entry point of the Docker image
+├── Dockerfile            Dockerfile with instructions to build the Docker image
 ├── jest.config.js        Jest configuration file
 ├── package.json          Project package.json
-├── package-lock.json     Package lock (can be removed to update dep versions)
 ├── README.md             README of the repo
 ├── tsconfig.json         TypeScript project configuration file
-└── tsconfig.eslint.json  TypeScript configuraiton file for the ESLint parser
+├── tsconfig.eslint.json  TypeScript configuraiton file for the ESLint parser
+└── yarn.lock             Lock file (never remove this)
 ```
 
 # Features
