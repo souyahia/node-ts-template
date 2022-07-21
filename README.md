@@ -49,7 +49,6 @@ This project uses an [ESLint](https://eslint.org/) linter, along with [Prettier]
 - `@typescript-eslint/recommended`
 - `@typescript-eslint/recommended-requiring-type-checking`
 - `promise/recommended`
-- `prettier`
 - `@typescript-eslint`
 
 The Jest plugin is also installed to allow Jest and ESLint to work together properly.
