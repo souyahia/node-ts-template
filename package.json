@@ -1,11 +1,11 @@
 {
-  "name": "nodejs-ts-template",
-  "version": "0.0.2",
-  "description": "Custom NodeJs TypeScript project template.",
+  "name": "node-ts-template",
+  "version": "0.0.3",
+  "description": "NodeJs TypeScript project template.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Samy Ouyahia",
-  "email": "sr.ouyahia@gmail.com",
+  "email": "ouyahia.samy@yahoo.fr",
   "url": "",
   "keywords": [
     "custom",
@@ -26,12 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/souyahia/nodejs-template.git"
+    "url": "https://github.com/souyahia/node-ts-template.git"
   },
   "bugs": {
-    "url": "https://github.com/souyahia/nodejs-template/issues"
+    "url": "https://github.com/souyahia/node-ts-template/issues"
   },
-  "homepage": "https://github.com/souyahia/nodejs-template#readme",
+  "homepage": "https://github.com/souyahia/node-ts-template#readme",
   "private": false,
   "dependencies": {
     "bunyan": "^1.8.15",
