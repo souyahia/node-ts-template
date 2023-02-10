@@ -877,12 +877,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@souyahia/typescript-config@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@souyahia/typescript-config@npm:1.0.0"
-  peerDependencies:
-    typescript: ^4.8.4
-  checksum: 7ff546d7c32fb5c223469f9eb60c984fb43b99ca7205ceb854ed2c7ac507dc095c0cb6efa40e8f38aefe2ac68520f619a73077e1803e60090ea9bd002ad9348b
+"@souyahia/typescript-config@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@souyahia/typescript-config@npm:1.1.2"
+  checksum: c9bc43cd5f0eec20624b4b9b43cc48bde42b7d846866abd11678f8282288b2422af0ceb8d1e607d0b6d8bb0084f97e0e5f021ede0f2bbf5fccc15eb89f3a3a0d
   languageName: node
   linkType: hard
 
@@ -4192,7 +4190,7 @@ __metadata:
     "@souyahia/eslint-config-base": ^1.0.0
     "@souyahia/eslint-config-typescript": ^1.0.0
     "@souyahia/prettier-config": ^1.0.0
-    "@souyahia/typescript-config": ^1.0.0
+    "@souyahia/typescript-config": ^1.1.2
     "@types/bunyan": ^1.8.8
     "@types/jest": ^28.1.6
     "@types/node": ^18.0.6

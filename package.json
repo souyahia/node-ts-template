@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": {
-    "name" : "Samy Ouyahia",
-    "email" : "souyahia.dev@gmail.com"
+    "name": "Samy Ouyahia",
+    "email": "souyahia.dev@gmail.com"
   },
   "keywords": [
     "custom",
